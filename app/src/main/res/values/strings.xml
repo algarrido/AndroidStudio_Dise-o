@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WolfRol</string>
+    <string name="title_activity_listado">ListadoActivity</string>
+    <string name="title_activity_formulario">FormularioActivity</string>
+</resources>

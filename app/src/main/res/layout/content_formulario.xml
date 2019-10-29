@@ -8,15 +8,17 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".views.FormularioActivity"
     android:background="#434343"
+
     tools:showIn="@layout/activity_formulario">
 
     <EditText
         android:id="@+id/editTextNombre"
         android:layout_width="124dp"
         android:layout_height="46dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="#FFFFFF"
         android:ems="10"
@@ -24,21 +26,23 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.177"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <ImageView
         android:id="@+id/imageViewNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextNombre"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editTextNombre"
-        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editTextNombre"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <EditText
@@ -82,7 +86,7 @@
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -92,9 +96,11 @@
         android:id="@+id/imageViewPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/editText4"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editText4"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editText4"
         app:layout_constraintVertical_bias="0.0"
@@ -104,18 +110,22 @@
         android:id="@+id/editText4"
         android:layout_width="64dp"
         android:layout_height="38dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+
         android:layout_marginTop="52dp"
         android:layout_marginEnd="280dp"
-
         android:layout_marginRight="280dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:hint="Peso"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageViewNombre"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombre"
+        app:layout_constraintVertical_bias="0.005" />
 
     <ImageView
         android:id="@+id/imageViewEjemploImagen"
@@ -132,84 +142,108 @@
         android:id="@+id/imageViewEdad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editText"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.017"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <Switch
         android:id="@+id/switchEnPartida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:text="En partida  "
         android:textColor="#999999"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewPersonaje"
         app:layout_constraintStart_toEndOf="@+id/imageViewEjemploImagen"
         app:layout_constraintTop_toBottomOf="@+id/editTextGenero"
-        app:layout_constraintVertical_bias="0.49" />
+        app:layout_constraintVertical_bias="0.458" />
 
     <Spinner
         android:id="@+id/spinnerRaza"
-        android:layout_width="114dp"
+        android:layout_width="91dp"
         android:layout_height="40dp"
         android:entries="@array/country_arrays"
         android:popupBackground="#FFFF"
         android:textColor="#999999"
         app:layout_constraintBottom_toTopOf="@+id/switchEnPartida"
         app:layout_constraintEnd_toEndOf="@+id/imageViewPersonaje"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toEndOf="@+id/imageViewEjemploImagen"
         app:layout_constraintTop_toBottomOf="@+id/editTextGenero"
-        app:layout_constraintVertical_bias="0.445" />
+        app:layout_constraintVertical_bias="0.375" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="66dp"
         android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
         android:background="#FFFF"
         android:ems="10"
         android:hint="Edad"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/imageViewPersonaje"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageViewEjemploImagen"
-        app:layout_constraintHorizontal_bias="0.44"
-        app:layout_constraintStart_toEndOf="@+id/imageViewEdad"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText4"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.1"
+        tools:srcCompat="@android:drawable/ic_menu_save" />
 
     <EditText
-        android:id="@+id/editText3"
-        android:layout_width="335dp"
-        android:layout_height="139dp"
+        android:id="@+id/editText2"
+        android:layout_width="327dp"
+        android:layout_height="181dp"
+        android:layout_marginBottom="120dp"
         android:background="#FFFF"
         android:ems="10"
-        android:hint="Historia"
-        android:inputType="textPersonName"
+        android:gravity="start|top"
+        android:hint="  Historia"
+        android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewEjemploImagen"
-        app:layout_constraintVertical_bias="0.299" />
+        app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/buttonGuardar"
-        android:layout_width="111dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonAñadir"
+        android:layout_width="36dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:background="#FF9800"
-        android:drawableTop="@android:drawable/ic_menu_save"
+        android:clickable="true"
+
+        android:foreground="@android:drawable/ic_menu_add"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#555454"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerRaza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPersonaje" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonGuardar"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:background="#FF9800"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_save"
+        android:tint="#FFFFFF"
+
+        app:backgroundTint="#FF9800"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
-        app:layout_constraintVertical_bias="0.517" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.375" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

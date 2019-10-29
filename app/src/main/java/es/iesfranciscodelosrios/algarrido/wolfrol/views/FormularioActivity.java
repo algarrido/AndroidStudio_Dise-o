@@ -24,7 +24,6 @@ public class FormularioActivity extends AppCompatActivity implements FormularioI
         setContentView(R.layout.activity_formulario);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         presenter = new FormularioPresenter(this);
         presenter.botonVolver();
     }

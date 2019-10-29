@@ -12,7 +12,9 @@
         <activity
             android:name=".views.FormularioActivity"
             android:label="@string/title_activity_formulario"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".views.ListadoActivity"
+            />
         <activity
             android:name=".views.ListadoActivity"
             android:label="@string/title_activity_listado"

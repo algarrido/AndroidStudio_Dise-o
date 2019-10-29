@@ -1,6 +1,6 @@
 package es.iesfranciscodelosrios.algarrido.wolfrol.interfaces;
 
-public interface Formulariointerface {
+public interface FormularioInterface {
     public interface View{
         void volverListado();
     }

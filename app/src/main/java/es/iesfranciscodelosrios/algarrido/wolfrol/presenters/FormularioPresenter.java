@@ -14,4 +14,9 @@ public class FormularioPresenter implements FormularioInterface.Presenter {
         view.volverListado();
 
     }
+
+    @Override
+    public void guardarFormulario() {
+        view.botonGuardar();
+    }
 }

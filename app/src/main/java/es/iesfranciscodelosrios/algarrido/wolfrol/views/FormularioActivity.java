@@ -1,5 +1,6 @@
 package es.iesfranciscodelosrios.algarrido.wolfrol.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -8,6 +9,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.util.Log;
 import android.view.View;
 
 import es.iesfranciscodelosrios.algarrido.wolfrol.R;
@@ -26,11 +28,31 @@ public class FormularioActivity extends AppCompatActivity implements FormularioI
         setSupportActionBar(toolbar);
         presenter = new FormularioPresenter(this);
         presenter.botonVolver();
-    }
 
+        FloatingActionButton fab = findViewById(R.id.floatingActionButtonGuardar);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG,"Pulsando boton flotante...");
+                presenter.guardarFormulario();
+
+            }
+        });
+
+    }
 
     @Override
     public void volverListado() {
+        Log.d(TAG,"Volviendo a Listado...");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
+    @Override
+    public void botonGuardar() {
+        Log.d(TAG,"Guardando Formulario...");
+        Intent intent = new Intent(FormularioActivity.this, ListadoActivity.class);
+        startActivity(intent);
+    }
+
 }
+

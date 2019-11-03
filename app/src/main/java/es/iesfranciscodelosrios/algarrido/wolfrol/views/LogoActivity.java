@@ -31,38 +31,38 @@ public class LogoActivity extends Activity {
         }, 5000);
     }
     @Override
-    protected  void onStart(){
+    protected void onStart(){
         super.onStart();
         Log.d(TAG,"onStart...");
 
     }
     @Override
-    protected  void onResume(){
+    protected void onResume(){
         super.onResume();
         Log.d(TAG,"onResume...");
 
     }
     @Override
-    protected  void onPause(){
+    protected void onPause(){
         super.onPause();
         Log.d(TAG,"onPause...");
 
     }
     @Override
-    protected  void onStop(){
+    protected void onStop(){
         super.onStop();
 
         Log.d(TAG,"onStop...");
 
     }
     @Override
-    protected  void onRestart(){
+    protected void onRestart(){
         super.onRestart();
         Log.d(TAG,"onRestart...");
 
     }
     @Override
-    protected  void onDestroy(){
+    protected void onDestroy(){
         super.onDestroy();
         Log.d(TAG,"onDestroy...");
 

@@ -13,87 +13,17 @@
 
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/linearLayout4"
-            android:layout_width="788dp"
-            android:layout_height="64dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageViewGenero"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="72dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
-                app:layout_constraintEnd_toStartOf="@+id/editTextGenero"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/ic_menu_edit" />
-
-            <EditText
-                android:id="@+id/editTextNombre"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
-
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="40dp"
-                android:background="#FFFFFF"
-                android:ems="10"
-                android:hint="Nombre"
-                android:inputType="textPersonName"
-                app:layout_constraintStart_toEndOf="@+id/imageViewNombre"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageViewNombre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="28dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="35dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/ic_menu_edit" />
-
-            <EditText
-                android:id="@+id/editTextGenero"
-                android:layout_width="90dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="72dp"
-                android:layout_marginEnd="48dp"
-                android:layout_marginRight="48dp"
-                android:background="#FFFFFF"
-                android:ems="10"
-                android:hint="Género"
-                android:inputType="textPersonName"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="785dp"
         android:layout_height="220dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="157dp">
+            android:layout_height="194dp">
 
             <ImageView
                 android:id="@+id/imageViewEjemploImagen"
@@ -110,15 +40,15 @@
                 android:layout_width="66dp"
                 android:layout_height="0dp"
 
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="20dp"
                 android:background="#FFFFFF"
                 android:ems="10"
                 android:hint="Peso"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toEndOf="@+id/imageViewPeso"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/floatingActionButton3"
@@ -139,15 +69,15 @@
                 android:layout_height="0dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewPeso"
                 app:srcCompat="@android:drawable/ic_menu_edit" />
 
             <ImageView
                 android:id="@+id/imageViewPersonaje"
-                android:layout_width="0dp"
-                android:layout_height="182dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="#00FFFFFF"
                 android:backgroundTint="#00FFFFFF"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -162,9 +92,9 @@
                 android:id="@+id/switchEnPartida"
                 android:layout_width="111dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="28dp"
-                android:layout_marginRight="28dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
                 android:text="En partida  "
                 android:textColor="#999999"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -187,8 +117,8 @@
                 android:id="@+id/editText"
                 android:layout_width="66dp"
                 android:layout_height="0dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="20dp"
                 android:background="#FFFF"
                 android:ems="10"
@@ -204,7 +134,58 @@
                 android:layout_height="0dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewNombre"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <EditText
+                android:id="@+id/editTextGenero"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="Género"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toEndOf="@+id/imageViewGenero"
+                app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+            <ImageView
+                android:id="@+id/imageViewGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewEdad"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toEndOf="@+id/imageViewNombre"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@android:drawable/ic_menu_edit" />
@@ -226,9 +207,9 @@
             android:layout_height="match_parent">
 
             <EditText
-                android:id="@+id/editText2"
-                android:layout_width="351dp"
-                android:layout_height="85dp"
+                android:id="@+id/editTextHistoria"
+                android:layout_width="347dp"
+                android:layout_height="81dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 android:background="#FFFF"

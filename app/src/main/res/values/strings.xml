@@ -1,16 +1,25 @@
 <resources>
-    <string name="app_name">WolfRol</string>
-    <string name="title_activity_listado">ListadoActivity</string>
-    <string name="title_activity_formulario">FormularioActivity</string>
-    <string-array name="country_arrays">
+    <string name="app_name" translatable="false">WolfRol</string>
+    <string name="title_activity_listado" translatable="false">ListadoActivity</string>
+    <string name="title_activity_formulario" translatable="false">FormularioActivity</string>
+    <string-array name="raza_arrays">
         <item>Semi Elfo</item>
         <item>Orco</item>
         <item>Mediano</item>
         <item>Enano</item>
     </string-array>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main" translatable="false">MainActivity</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="en_partida">En partida</string>
+    <string name="edad">Edad</string>
+    <string name="nombre">Nombre</string>
+    <string name="g_nero">Género</string>
+    <string name="historia">Historia</string>
+    <string name="tituloFormulario">Creación de personaje</string>
+    <string name="sobreMi">Sobre mi</string>
+    <string name="ajustes">Configuracion</string>
+    <string name="title_activity_sobre_mi">SobreMiActivity</string>
 
 </resources>

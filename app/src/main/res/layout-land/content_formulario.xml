@@ -107,7 +107,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:entries="@array/country_arrays"
+                android:entries="@array/raza_arrays"
                 android:popupBackground="#FFFF"
                 android:textColor="#999999"
                 app:layout_constraintEnd_toStartOf="@+id/floatingActionButton3"

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="historia">History</string>
+    <string name="en_partida">In game </string>
+    <string name="edad">Age</string>
+    <string name="nombre">Name</string>
+    <string name="g_nero">Gender</string>
+    <string name="tituloFormulario">Character creation</string>
+    <string name="sobreMi">About me</string>
+    <string name="title_activity_sobre_mi">About me</string>
+    <string name="ajustes">Settings</string>
+
+</resources>

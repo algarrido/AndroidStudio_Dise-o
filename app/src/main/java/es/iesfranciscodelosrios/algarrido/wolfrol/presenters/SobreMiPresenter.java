@@ -1,4 +1,18 @@
 package es.iesfranciscodelosrios.algarrido.wolfrol.presenters;
 
-public class SobreMiPresenter {
+import es.iesfranciscodelosrios.algarrido.wolfrol.interfaces.SobreMiInterface;
+
+public class SobreMiPresenter implements SobreMiInterface.Presenter {
+
+    private SobreMiInterface.View view;
+
+    public SobreMiPresenter(SobreMiInterface.View view){
+        this.view=view;
+    }
+
+    @Override
+    public void pestaña3() {
+        view.lanzarSobreMi();
+    }
 }
+

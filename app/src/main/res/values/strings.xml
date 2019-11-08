@@ -20,6 +20,8 @@
     <string name="tituloFormulario">Creación de personaje</string>
     <string name="sobreMi">Sobre mi</string>
     <string name="ajustes">Configuracion</string>
+    <string name="ordenar">Ordenar</string>
+
     <string name="title_activity_sobre_mi">SobreMiActivity</string>
 
 </resources>

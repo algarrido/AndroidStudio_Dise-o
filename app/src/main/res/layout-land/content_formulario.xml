@@ -47,7 +47,7 @@
                 android:ems="10"
                 android:hint="Peso"
                 android:inputType="textPersonName"
-                app:layout_constraintStart_toEndOf="@+id/imageViewPeso"
+                app:layout_constraintStart_toEndOf="@+id/imageViewFecha"
                 app:layout_constraintTop_toBottomOf="@+id/editTextNombre" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -71,7 +71,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageViewPeso"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewFecha"
                 app:srcCompat="@android:drawable/ic_menu_edit" />
 
             <ImageView
@@ -129,7 +129,7 @@
                 tools:srcCompat="@android:drawable/ic_menu_save" />
 
             <ImageView
-                android:id="@+id/imageViewPeso"
+                android:id="@+id/imageViewFecha"
                 android:layout_width="32dp"
                 android:layout_height="0dp"
                 android:layout_marginStart="20dp"

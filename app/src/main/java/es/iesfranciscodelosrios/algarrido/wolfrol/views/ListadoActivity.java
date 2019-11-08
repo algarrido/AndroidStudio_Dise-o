@@ -17,7 +17,7 @@ import es.iesfranciscodelosrios.algarrido.wolfrol.R;
 import es.iesfranciscodelosrios.algarrido.wolfrol.interfaces.ListadoInterface;
 import es.iesfranciscodelosrios.algarrido.wolfrol.presenters.ListadoPresenter;
 
-public class ListadoActivity extends AppCompatActivity implements ListadoInterface.View {
+public class ListadoActivity extends AppCompatActivity implements ListadoInterface.View{
     String TAG="WolfRol/ListadoActivity";
     private ListadoInterface.Presenter presenter;
 
@@ -53,6 +53,10 @@ public class ListadoActivity extends AppCompatActivity implements ListadoInterfa
             case R.id.action_sobreMi:
                 Log.i(TAG, "Sobre mi...");
                 return true;
+            case R.id.action_ordenar:
+                Log.i(TAG, "Ordenar...");;
+                return true;
+
             case R.id.action_settings:
                 Log.i(TAG, "Configuracion...");;
                 return true;

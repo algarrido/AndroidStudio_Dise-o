@@ -10,9 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".views.BuscarActivity"
+            android:label="@string/title_activity_buscar"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".views.SobreMiActivity"
             android:label="@string/title_activity_sobre_mi"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:parentActivityName=".views.ListadoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".views.FormularioActivity"
             android:label="@string/title_activity_formulario"
@@ -22,7 +27,6 @@
             android:name=".views.ListadoActivity"
             android:label="@string/title_activity_listado"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity android:name=".views.LogoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

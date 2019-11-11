@@ -1,15 +1,15 @@
 package es.iesfranciscodelosrios.algarrido.wolfrol.interfaces;
 
 public interface SobreMiInterface {
-/*
+
     public interface View{
 
-        void lanzarSobreMi();
+        void volverListado();
     }
 
     public interface Presenter{
 
-        void pestaña3();
+        void botonVolver();
     }
-*/
+
 }

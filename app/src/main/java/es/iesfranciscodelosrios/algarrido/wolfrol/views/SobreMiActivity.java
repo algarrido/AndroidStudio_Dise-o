@@ -16,13 +16,10 @@ import es.iesfranciscodelosrios.algarrido.wolfrol.R;
 import es.iesfranciscodelosrios.algarrido.wolfrol.interfaces.SobreMiInterface;
 import es.iesfranciscodelosrios.algarrido.wolfrol.presenters.SobreMiPresenter;
 
-public class SobreMiActivity extends AppCompatActivity  {
+public class SobreMiActivity extends AppCompatActivity implements SobreMiInterface.View{
 
     String TAG="WolfRol/SobreMiActivity";
-
-
-
-
+    private SobreMiInterface.Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +27,8 @@ public class SobreMiActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_sobre_mi);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        presenter = new SobreMiPresenter(this);
+        presenter.botonVolver();
 
     }
     @Override
@@ -65,4 +63,9 @@ public class SobreMiActivity extends AppCompatActivity  {
     }
 
 
+    @Override
+    public void volverListado() {
+        Log.d(TAG,"Volviendo a Listado...");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
 }

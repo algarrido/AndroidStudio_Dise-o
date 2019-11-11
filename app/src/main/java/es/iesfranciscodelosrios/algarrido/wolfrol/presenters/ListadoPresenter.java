@@ -13,5 +13,8 @@ public class ListadoPresenter implements ListadoInterface.Presenter {
     public void botonAñadir(){
         view.lanzarFormulario();
     }
-
+    @Override
+    public void pestaña3() {
+        view.lanzarSobreMi();
+    }
 }

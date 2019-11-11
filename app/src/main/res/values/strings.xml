@@ -13,7 +13,7 @@
     <string name="title_dashboard" translatable="false">Dashboard</string>
     <string name="title_notifications" translatable="false">Notifications</string>
     <string name="en_partida">En partida</string>
-    <string name="edad">Edad</string>
+    <string name="peso">Peso</string>
     <string name="nombre">Nombre</string>
     <string name="g_nero">Género</string>
     <string name="historia">Historia</string>
@@ -23,5 +23,6 @@
     <string name="ordenar">Ordenar</string>
 
     <string name="title_activity_sobre_mi">SobreMiActivity</string>
+    <string name="buscar" />
 
 </resources>

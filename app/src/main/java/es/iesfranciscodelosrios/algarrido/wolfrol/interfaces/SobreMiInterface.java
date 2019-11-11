@@ -1,7 +1,7 @@
 package es.iesfranciscodelosrios.algarrido.wolfrol.interfaces;
 
 public interface SobreMiInterface {
-
+/*
     public interface View{
 
         void lanzarSobreMi();
@@ -11,5 +11,5 @@ public interface SobreMiInterface {
 
         void pestaña3();
     }
-
+*/
 }

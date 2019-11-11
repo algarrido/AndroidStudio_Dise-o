@@ -52,6 +52,7 @@ public class ListadoActivity extends AppCompatActivity implements ListadoInterfa
         switch (item.getItemId()) {
             case R.id.action_sobreMi:
                 Log.i(TAG, "Sobre mi...");
+                presenter.pestaña3();
                 return true;
             case R.id.action_ordenar:
                 Log.i(TAG, "Ordenar...");;
@@ -100,6 +101,13 @@ public class ListadoActivity extends AppCompatActivity implements ListadoInterfa
     public void lanzarFormulario() {
         Log.d(TAG,"Lanzando Formulario...");
         Intent intent = new Intent(ListadoActivity.this, FormularioActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void lanzarSobreMi() {
+        Log.d(TAG,"Lanzando Formulario...");
+        Intent intent = new Intent(ListadoActivity.this,SobreMiActivity.class);
         startActivity(intent);
     }
 }

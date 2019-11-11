@@ -16,10 +16,10 @@ import es.iesfranciscodelosrios.algarrido.wolfrol.R;
 import es.iesfranciscodelosrios.algarrido.wolfrol.interfaces.SobreMiInterface;
 import es.iesfranciscodelosrios.algarrido.wolfrol.presenters.SobreMiPresenter;
 
-public class SobreMiActivity extends AppCompatActivity implements SobreMiInterface.View  {
+public class SobreMiActivity extends AppCompatActivity  {
 
     String TAG="WolfRol/SobreMiActivity";
-    private SobreMiInterface.Presenter presenter;
+
 
 
 
@@ -30,8 +30,7 @@ public class SobreMiActivity extends AppCompatActivity implements SobreMiInterfa
         setContentView(R.layout.activity_sobre_mi);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        presenter = new SobreMiPresenter(this);
-        presenter.pestaña3();
+
 
     }
     @Override
@@ -65,8 +64,5 @@ public class SobreMiActivity extends AppCompatActivity implements SobreMiInterfa
         Log.d(TAG,"onDestroy...");
     }
 
-    @Override
-    public void lanzarSobreMi() {
 
-    }
 }

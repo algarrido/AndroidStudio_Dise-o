@@ -32,9 +32,9 @@
                 android:layout_marginTop="144dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                app:layout_constraintEnd_toStartOf="@+id/editTextFecha"
+                app:layout_constraintEnd_toStartOf="@+id/editTextFechaF"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+                app:srcCompat="@drawable/ic_date_range" />
 
             <ImageView
                 android:id="@+id/imageViewEjemploImagen"
@@ -61,14 +61,14 @@
 
             <ImageView
                 android:id="@+id/imageViewPeso"
-                android:layout_width="32dp"
-                android:layout_height="0dp"
+                android:layout_width="31dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="40dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewNombre"
-                app:srcCompat="@android:drawable/ic_menu_edit" />
+                app:srcCompat="@drawable/ic_accessibility" />
 
             <ImageView
                 android:id="@+id/imageViewPersonaje"
@@ -112,28 +112,28 @@
 
             <ImageView
                 android:id="@+id/imageViewGenero"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="31dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="40dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewPeso"
-                app:srcCompat="@android:drawable/ic_menu_edit" />
+                app:srcCompat="@drawable/ic_wc" />
 
             <ImageView
                 android:id="@+id/imageViewNombre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="31dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/ic_menu_edit" />
+                app:srcCompat="@drawable/ic_action_user" />
 
             <EditText
-                android:id="@+id/editTextFecha"
+                android:id="@+id/editTextFechaF"
                 style="@style/myEditText"
                 android:layout_width="158dp"
                 android:layout_height="47dp"
@@ -154,6 +154,7 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
                 android:background="#FFFF"
                 app:layout_constraintStart_toEndOf="@+id/imageViewNombre"
                 app:layout_constraintTop_toTopOf="parent">
@@ -226,20 +227,34 @@
 
             <EditText
                 android:id="@+id/editTextHistoria"
-                android:layout_width="347dp"
+                style="@style/myEditText"
+                android:layout_width="0dp"
                 android:layout_height="81dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="80dp"
                 android:layout_marginBottom="20dp"
                 android:background="#FFFF"
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="  Historia"
-                style="@style/myEditText"
                 android:inputType="textMultiLine"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_action_edit" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>

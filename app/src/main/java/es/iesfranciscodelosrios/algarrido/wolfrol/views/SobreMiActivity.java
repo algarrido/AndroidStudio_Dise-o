@@ -68,4 +68,18 @@ public class SobreMiActivity extends AppCompatActivity implements SobreMiInterfa
         Log.d(TAG,"Volviendo a Listado...");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Log.d(TAG,"onBackPressed...");
+        finish();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        Log.d(TAG,"onSupportnavigateUp...");
+        return super.onSupportNavigateUp();
+    }
 }

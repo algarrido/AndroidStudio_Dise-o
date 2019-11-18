@@ -29,9 +29,9 @@
                 android:id="@+id/imageViewFecha2"
                 android:layout_width="49dp"
                 android:layout_height="44dp"
-                android:layout_marginTop="140dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginRight="4dp"
+                android:layout_marginTop="144dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 app:layout_constraintEnd_toStartOf="@+id/editTextFecha"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@android:drawable/ic_menu_my_calendar" />
@@ -137,8 +137,8 @@
                 style="@style/myEditText"
                 android:layout_width="158dp"
                 android:layout_height="47dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginRight="44dp"
                 android:background="#FFFF"
                 android:ems="10"
                 android:hint="Fecha Nacimiento"
@@ -146,42 +146,42 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/switchEnPartida"
-                app:layout_constraintVertical_bias="0.684" />
+                app:layout_constraintVertical_bias="0.8" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputLayoutNombre"
                 android:layout_width="106dp"
-                android:layout_height="44dp"
+                android:layout_height="45dp"
                 android:layout_marginStart="4dp"
-                android:background="#FFFF"
                 android:layout_marginLeft="4dp"
+                android:background="#FFFF"
                 app:layout_constraintStart_toEndOf="@+id/imageViewNombre"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
                     style="@style/myEditText"
-                    android:background="#FFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
 
-                    android:layout_height="wrap_content"
+                    android:background="#FFFF"
                     android:hint="@string/nombre" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputLayoutPeso"
                 android:layout_width="106dp"
-                android:layout_height="44dp"
-                android:background="#FFFF"
+                android:layout_height="45dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="30dp"
+                android:background="#FFFF"
                 app:layout_constraintStart_toEndOf="@+id/imageViewPeso"
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayoutNombre">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    style="@style/myEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/myEditText"
                     android:background="#FFFF"
 
                     android:hint="@string/peso" />
@@ -190,7 +190,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TextInptLayautGenero"
                 android:layout_width="106dp"
-                android:layout_height="44dp"
+                android:layout_height="45dp"
                 android:layout_marginStart="4dp"
 
                 android:layout_marginLeft="4dp"
@@ -202,7 +202,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     style="@style/myEditText"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:background="#FFFF"
 
                     android:hint="Genero" />

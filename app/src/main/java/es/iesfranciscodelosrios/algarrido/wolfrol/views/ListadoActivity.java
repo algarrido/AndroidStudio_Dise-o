@@ -61,6 +61,10 @@ public class ListadoActivity extends AppCompatActivity implements ListadoInterfa
             case R.id.action_settings:
                 Log.i(TAG, "Configuracion...");;
                 return true;
+            case R.id.action_buscar:
+                Log.i(TAG, "Buscar...");;
+                presenter.pestañaBuscar();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -106,8 +110,15 @@ public class ListadoActivity extends AppCompatActivity implements ListadoInterfa
 
     @Override
     public void lanzarSobreMi() {
-        Log.d(TAG,"Lanzando Formulario...");
+        Log.d(TAG,"Lanzando sobre mi...");
         Intent intent = new Intent(ListadoActivity.this,SobreMiActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void lanzarBuscar() {
+        Log.d(TAG,"Lanzando buscar...");
+        Intent intent = new Intent(ListadoActivity.this,BuscarActivity.class);
         startActivity(intent);
     }
 }

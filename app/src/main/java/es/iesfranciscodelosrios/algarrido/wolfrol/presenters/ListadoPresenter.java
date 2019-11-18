@@ -10,11 +10,16 @@ public class ListadoPresenter implements ListadoInterface.Presenter {
         this.view=view;
     }
 @Override
-    public void botonAñadir(){
+    public void botonAñadir() {
         view.lanzarFormulario();
     }
     @Override
     public void pestaña3() {
         view.lanzarSobreMi();
+    }
+
+    @Override
+    public void pestañaBuscar() {
+        view.lanzarBuscar();
     }
 }

@@ -25,8 +25,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="405dp"
-            android:layout_height="311dp">
+            android:layout_width="match_parent"
+            android:layout_height="307dp">
 
             <ImageView
                 android:id="@+id/imageViewEjemploImagen"
@@ -43,8 +43,8 @@
                 android:layout_width="25dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="60dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
                 android:clickable="true"
                 android:foreground="@android:drawable/ic_menu_add"
                 app:backgroundTint="#6B696D"
@@ -57,7 +57,7 @@
                 android:layout_height="20dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="56dp"
+                android:layout_marginTop="70dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewNombre"
                 app:srcCompat="@android:drawable/ic_menu_edit" />
@@ -65,7 +65,7 @@
             <ImageView
                 android:id="@+id/imageViewPersonaje"
                 android:layout_width="0dp"
-                android:layout_height="210dp"
+                android:layout_height="204dp"
                 android:background="#00FFFFFF"
                 android:backgroundTint="#00FFFFFF"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -81,8 +81,8 @@
                 android:layout_width="111dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="140dp"
-                android:layout_marginEnd="32dp"
-                android:layout_marginRight="32dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
                 android:text="@string/en_partida"
                 android:textColor="#999999"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -101,14 +101,14 @@
 
             <ImageView
                 android:id="@+id/imageViewFecha"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="116dp"
-                android:layout_marginLeft="116dp"
+                android:layout_width="33dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="300dp"
+                android:layout_marginLeft="300dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageViewPersonaje"
-                app:layout_constraintStart_toEndOf="@+id/TextGenero"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.9"
+                app:layout_constraintVertical_bias="0.977"
                 app:srcCompat="@android:drawable/ic_menu_my_calendar" />
 
             <ImageView
@@ -117,7 +117,7 @@
                 android:layout_height="20dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="64dp"
+                android:layout_marginTop="40dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@android:drawable/ic_menu_edit" />
@@ -128,24 +128,24 @@
                 android:layout_height="20dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="56dp"
+                android:layout_marginTop="70dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewPeso"
                 app:srcCompat="@android:drawable/ic_menu_edit" />
 
             <EditText
                 android:id="@+id/editTextFecha"
-                android:layout_width="114dp"
-                android:layout_height="30dp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
 
                 android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="48dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
                 android:background="#FFFF"
                 android:ems="10"
-                android:hint="Fecha Nacimiento"
+                android:hint="Fec. Nac."
                 android:inputType="date"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -154,8 +154,9 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TextPeso"
+                style="@style/Numbers"
                 android:layout_width="86dp"
-                android:layout_height="36dp"
+                android:layout_height="60dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="40dp"
@@ -173,7 +174,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TextGenero"
                 android:layout_width="86dp"
-                android:layout_height="36dp"
+                android:layout_height="60dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="40dp"
@@ -185,27 +186,25 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="hint" />
+                    android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TextNombre"
                 android:layout_width="86dp"
-                android:layout_height="36dp"
-                android:background="#FFFF"
-
+                android:layout_height="60dp"
                 android:layout_marginStart="4dp"
+
                 android:layout_marginLeft="4dp"
-                android:layout_marginTop="56dp"
+                android:layout_marginTop="30dp"
+                android:background="#FFFF"
                 android:hint="@string/nombre"
                 app:layout_constraintStart_toEndOf="@+id/imageViewNombre"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="hint" />
+                    android:layout_height="wrap_content" />
             </com.google.android.material.textfield.TextInputLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -229,14 +228,11 @@
                 android:id="@+id/imageViewhistoria"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginRight="4dp"
                 android:layout_marginBottom="300dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/editTextHistoria"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
@@ -244,15 +240,15 @@
 
             <EditText
                 android:id="@+id/editTextHistoria"
-                android:layout_width="275dp"
+                android:layout_width="0dp"
 
-                android:layout_height="246dp"
-                android:layout_marginStart="55dp"
-                android:layout_marginLeft="55dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="55dp"
-                android:layout_marginRight="55dp"
-                android:layout_marginBottom="200dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="150dp"
                 android:background="#FFFF"
                 android:ems="10"
                 android:gravity="start|top"
@@ -260,8 +256,7 @@
                 android:inputType="textMultiLine"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.523"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewhistoria"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
 

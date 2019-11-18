@@ -54,5 +54,18 @@ public class FormularioActivity extends AppCompatActivity implements FormularioI
         startActivity(intent);
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Log.d(TAG,"onBackPressed...");
+        finish();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        Log.d(TAG,"onSupportnavigateUp...");
+        return super.onSupportNavigateUp();
+    }
 }
 

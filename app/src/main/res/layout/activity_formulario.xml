@@ -18,7 +18,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#FF9800"
+            android:background="@color/colorAccent"
             app:title="@string/tituloFormulario"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 

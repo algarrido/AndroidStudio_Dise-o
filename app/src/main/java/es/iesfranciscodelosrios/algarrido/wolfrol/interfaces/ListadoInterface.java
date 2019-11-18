@@ -6,10 +6,12 @@ public interface ListadoInterface {
 
         void lanzarFormulario();
         void lanzarSobreMi();
+        void lanzarBuscar();
     }
 
     public interface Presenter{
         void botonAñadir();
         void pestaña3();
+        void pestañaBuscar();
     }
 }

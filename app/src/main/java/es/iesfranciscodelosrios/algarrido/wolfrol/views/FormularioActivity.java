@@ -17,9 +17,6 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
-
 import java.util.Calendar;
 
 import es.iesfranciscodelosrios.algarrido.wolfrol.R;
@@ -33,7 +30,7 @@ public class FormularioActivity extends AppCompatActivity implements FormularioI
     private static final String CERO = "0";
     private static final String BARRA = "/";
 
-    //Calendario para obtener fecha & hora
+    //Calendario para obtener fecha
     public final Calendar c = Calendar.getInstance();
 
     //Variables para obtener la fecha
@@ -46,6 +43,11 @@ public class FormularioActivity extends AppCompatActivity implements FormularioI
     Button ibObtenerFecha;
 
     TextInputLayout nombreInputLayout;
+    TextInputLayout pesoInputLayout;
+    TextInputLayout generoInputLayout;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,8 @@ public class FormularioActivity extends AppCompatActivity implements FormularioI
         presenter.botonVolver();
 
         nombreInputLayout = (TextInputLayout) findViewById(R.id.TextNombre);
+        pesoInputLayout = (TextInputLayout) findViewById(R.id.TextPeso);
+        generoInputLayout = (TextInputLayout) findViewById(R.id.TextGenero);
         //Widget EditText donde se mostrara la fecha obtenida
         etFecha = (EditText) findViewById(R.id.editTextFechaF);
         //Widget ImageButton del cual usaremos el evento clic para obtener la fecha
@@ -84,30 +88,24 @@ public class FormularioActivity extends AppCompatActivity implements FormularioI
 
                     @Override
                     public void onError(String errMsg) {
-                        Toast.makeText(FormularioActivity.this, errMsg, Toast.LENGTH_SHORT).show(); //Correcto
+                        Toast.makeText(FormularioActivity.this, errMsg, Toast.LENGTH_SHORT).show(); //error
                     }
                 });
-
             }
         });
 
-
         final TextInputEditText n = (TextInputEditText) findViewById(R.id.nombre);
+        final TextInputEditText p = (TextInputEditText) findViewById(R.id.peso);
+        final TextInputEditText g = (TextInputEditText) findViewById(R.id.genero);
 
         n.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus) {
-                    Log.d("AppCRUD", n.getText().toString());
-                    if (n.getText().toString().startsWith("rafa")) {
-                        nombreInputLayout.setError("Nombre incorrecto");
-                    } else {
-                        nombreInputLayout.setError("");
-                    }
-                }
+                presenter.validacionCampo( hasFocus, nombreInputLayout,  n);
+                presenter.validacionCampo( hasFocus, pesoInputLayout,  p);
+                presenter.validacionCampo( hasFocus, generoInputLayout,  g);
             }
         });
-
     }
 
     private void obtenerFecha(){
@@ -136,13 +134,6 @@ public class FormularioActivity extends AppCompatActivity implements FormularioI
     public void volverListado() {
         Log.d(TAG,"Volviendo a Listado...");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }
-
-    @Override
-    public void botonGuardar() {
-        Log.d(TAG,"Guardando Formulario...");
-        Intent intent = new Intent(this, ListadoActivity.class);
-        startActivity(intent);
     }
 
 

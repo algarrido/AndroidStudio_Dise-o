@@ -1,9 +1,10 @@
 package es.iesfranciscodelosrios.algarrido.wolfrol.presenters;
 
-import android.telecom.Call;
-import android.view.View;
+import android.util.Log;
 
-import java.util.Random;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
 
 import es.iesfranciscodelosrios.algarrido.wolfrol.interfaces.FormularioInterface;
 
@@ -27,7 +28,6 @@ public class FormularioPresenter implements FormularioInterface.Presenter {
     }
 
 
-
     @Override
     public void guardarFormulario(Callback callback) {
         //Simular logica guardado ok y ko
@@ -37,6 +37,18 @@ public class FormularioPresenter implements FormularioInterface.Presenter {
         }else {
             callback.onOk();
         }
+    }
 
+    @Override
+    public void validacionCampo(boolean hasFocus, TextInputLayout nombreInputLayout, TextInputEditText n) {
+        if (!hasFocus) {
+            Log.d("AppCRUD", n.getText().toString());
+            if (n.getText().toString().startsWith("rafa")) {
+                nombreInputLayout.setError("Nombre incorrecto");
+
+            } else {
+                nombreInputLayout.setError("");
+            }
+        }
     }
 }

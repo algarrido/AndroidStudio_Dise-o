@@ -12,17 +12,6 @@
     tools:showIn="@layout/activity_formulario">
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteY="5dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
@@ -35,19 +24,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="307dp">
 
             <ImageView
                 android:id="@+id/imageViewEjemploImagen"
-                android:layout_width="82dp"
-                android:layout_height="142dp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageViewPersonaje"
+                android:layout_width="0dp"
+                android:layout_height="139dp"
+                android:layout_marginTop="84dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.532"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/ic_menu_gallery" />
+                app:srcCompat="@android:drawable/ic_menu_gallery"
+                tools:srcCompat="@drawable/personaje" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/floatingActionButton3"
@@ -61,20 +62,6 @@
                 app:backgroundTint="#6B696D"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/imageViewPersonaje"
-                android:layout_width="0dp"
-                android:layout_height="204dp"
-                android:background="#00FFFFFF"
-                android:backgroundTint="#00FFFFFF"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.495"
-                app:srcCompat="@drawable/personaje" />
 
             <Switch
                 android:id="@+id/switchEnPartida"
@@ -104,10 +91,12 @@
                 android:layout_width="0dp"
                 android:layout_height="41dp"
 
-                android:layout_marginTop="48dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="55dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:background="#FFFF"
+                android:background="#00FFFFFF"
                 android:ems="10"
                 android:hint="Fec. Nac."
                 android:inputType="date"
@@ -118,13 +107,8 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TextPeso"
                 style="@style/Numbers"
-                android:layout_width="86dp"
-                android:layout_height="60dp"
-
                 android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginTop="40dp"
-                android:background="#FFFF"
                 app:layout_constraintStart_toEndOf="@+id/imageViewPeso"
                 app:layout_constraintTop_toBottomOf="@+id/TextNombre">
 
@@ -137,13 +121,11 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TextGenero"
-                android:layout_width="86dp"
-                android:layout_height="60dp"
+
+                style="@style/campo"
 
                 android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
-                android:layout_marginTop="40dp"
-                android:background="#FFFF"
                 android:hint="Genero"
                 app:layout_constraintStart_toEndOf="@+id/imageViewGenero"
                 app:layout_constraintTop_toBottomOf="@+id/TextPeso">
@@ -157,13 +139,13 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/TextNombre"
-                android:layout_width="86dp"
-                android:layout_height="60dp"
+
+
+                style="@style/campo"
 
                 android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
                 android:layout_marginTop="30dp"
-                android:background="#FFFF"
                 android:hint="@string/nombre"
                 app:layout_constraintStart_toEndOf="@+id/imageViewusuario"
                 app:layout_constraintTop_toTopOf="parent">
@@ -171,7 +153,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/nombre"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="46dp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
@@ -180,7 +162,7 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="45dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_action_user" />
@@ -191,7 +173,7 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="40dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewusuario"
                 app:srcCompat="@drawable/ic_accessibility" />
@@ -202,7 +184,7 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="40dp"
                 android:layout_weight="1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewPeso"
@@ -210,8 +192,8 @@
 
             <Button
                 android:id="@+id/ButtonDatePicket"
-                android:layout_width="48dp"
-                android:layout_height="0dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="100dp"
                 android:layout_marginLeft="100dp"
                 android:layout_marginBottom="50dp"
@@ -251,7 +233,7 @@
                 android:layout_marginEnd="40dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginBottom="150dp"
-                android:background="#FFFF"
+                android:background="#1BFFFFFF"
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="@string/historia"
